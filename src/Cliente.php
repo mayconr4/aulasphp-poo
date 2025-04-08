@@ -9,7 +9,7 @@ class Cliente
     // Métodos (comportamentos da Classe)
     public function exibirDados(): void 
     {
-        echo "Este é o cliente.... $this->nome"; // passando atributo com this 
+        echo "<p style='color:royalblue'>Este é o cliente.... $this->nome</p>"; // passando atributo com this 
     }
     public function verificarIdade(int $idade): bool
     {
