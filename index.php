@@ -23,7 +23,19 @@ $clienteA ->idade = 30;
 $clienteA ->email = "fulano@gmail.com"; 
 ?>
 
+<h2>Acessando/lendo dados dos objetos</h2>
+
+<h3>Cliente A:</h3>
+<ul>
+    <li><b>Nome:  </b> <?=$clienteA->nome?> </li>
+    <li><b>Idade: </b> <?=$clienteA->idade?> </li>
+    <li><b>email: </b> <?=$clienteA->email?> </li>
+</ul>
+
+
 <h2>Testes de acesso aos recursos da classe atráves do objeto</h2> 
+
+
 
 <pre><?=var_dump($clienteA, $clienteB)?></pre>
 
