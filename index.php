@@ -21,6 +21,10 @@ $clienteB  = new Cliente();
 $clienteA ->nome = "Fulano da silva";
 $clienteA ->idade = 30;
 $clienteA ->email = "fulano@gmail.com"; 
+
+$clienteB ->nome = "Maycon Henrique";
+$clienteB ->idade = 17;
+$clienteB ->email = "mayconr4@gmail.com"; 
 ?>
 
 <h2>Acessando/lendo dados dos objetos</h2>
@@ -33,6 +37,16 @@ $clienteA ->email = "fulano@gmail.com";
 <ul>     
     <li><b>Idade: </b> <?=$clienteA->idade?> </li>
     <li><b>email: </b> <?=$clienteA->email?> </li>
+</ul>
+
+<h3>Cliente B:</h3>
+<div>
+    <?=$clienteB->exibirDados()?>
+</div>
+
+<ul>     
+    <li><b>Idade: </b> <?=$clienteB->idade?> </li>
+    <li><b>email: </b> <?=$clienteB->email?> </li>
 </ul>
 
 
