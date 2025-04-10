@@ -24,7 +24,11 @@ class Cliente
     }
 
     public function setemail(string $email): void 
-    { 
+    {  
+        if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+            throw new InvalidArgumentException("Email invalido");
+
+        }
         $this->email = $email;
     } 
 
