@@ -21,36 +21,33 @@ $clienteA  = new Cliente();
 $clienteB  = new Cliente();
 
 
-// Atribuindo valores para os atributos/ colocando dados no objetos
-$clienteA ->nome = "Fulano da silva";
-$clienteA ->idade = 30;
-$clienteA ->email = "fulano@gmail.com"; 
+// inserindo valores atraves do setters/metodo
+$clienteA ->setnome("Fulano da silva");
+$clienteA ->setidade(30);
+$clienteA ->setemail("Fulano@gmail.com");
 
-$clienteB ->nome = "Maycon Henrique";
-$clienteB ->idade = 17;
-$clienteB ->email = "mayconr4@gmail.com"; 
+
+$clienteB ->setnome("Maycon Henrique");
+$clienteB ->setidade(17);
+$clienteB ->setemail("mayconr4@gmail.com");
+ 
 ?>
 
 <h2>Acessando/lendo dados dos objetos</h2>
 
-<h3>Cliente A:</h3>
-<div>
-    <?=$clienteA->exibirDados()?>
-</div>
+
 
 <ul>     
-    <li><b>Idade: </b> <?=$clienteA->idade?> </li>
-    <li><b>email: </b> <?=$clienteA->email?> </li>
+    <li><b>Idade: </b> <?=$clienteA->getIdade()?> </li>
+    <li><b>email: </b> <?=$clienteA->getEmail()?> </li> 
+    <li><b>nome: </b> <?=$clienteA->getnome()?> </li>
 </ul>
 
-<h3>Cliente B:</h3>
-<div>
-    <?=$clienteB->exibirDados()?>
-</div>
 
 <ul>     
-    <li><b>Idade: </b> <?=$clienteB->idade?> </li>
-    <li><b>email: </b> <?=$clienteB->email?> </li>
+    <li><b>Idade: </b> <?=$clienteB->getNome()?> </li>
+    <li><b>email: </b> <?=$clienteB->getEmail()?> </li>
+    <li><b>idade: </b> <?=$clienteB->getIdade()?> </li>
 </ul>
 
 

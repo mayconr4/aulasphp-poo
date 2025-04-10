@@ -1,18 +1,47 @@
 <?php
 class Cliente
 {
-    // atributos (caracteristicas da Classe)
-    public string $nome;
-    public int $idade;
-    public string $email;
+ // atributos privados     
+    private string $nome;
+    private int $idade;
+    private string $email;
 
-    // Métodos (comportamentos da Classe)
-    public function exibirDados(): void 
-    {
-        echo "<p style='color:royalblue'>Este é o cliente.... $this->nome</p>"; // passando atributo com this 
+        /* métodos setters: reponsável por receber/atribuir dados
+        para as propriedades/atributos */
+
+    public function setnome(string $nome): void 
+    { 
+       /*this nome para acessar este metodo*/ $this->nome = $nome;
     }
-    public function verificarIdade(int $idade): bool
-    {
-        return true; // só para não ficar dando alerta de erro
+
+    public function setidade(int $idade): void 
+    {   
+        if($idade <= 0){ 
+            throw new InvalidArgumentException("idade não pode ser negativa");
+        }
+
+        $this->idade = $idade;
     }
+
+    public function setemail(string $email): void 
+    { 
+        $this->email = $email;
+    } 
+
+    public function getNome() :string
+    {
+        return $this-> nome;
+
+    }
+
+    public function getIdade() :int 
+    { 
+        return $this-> idade;
+    }
+
+    public function getEmail() :string 
+    { 
+        return $this-> email;
+    }
+
 }
