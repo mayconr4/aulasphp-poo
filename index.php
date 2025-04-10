@@ -10,7 +10,7 @@
 </head>
 <body>  
     <div class="container">
-        <h1 class=" text-center">exemplo1 php poo</h1>
+        <h1 class=" text-center">exemplo2 PHP COM POO</h1>
     <hr>    
 <?php 
 // Carregando/importando a classe
