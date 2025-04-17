@@ -16,6 +16,15 @@ class PessoaJuridica extends Cliente
 
         /*Como o método foi definido na superclasse como protected agora é possivel usá-lo para mudar a situação de PJ. */ 
         $this->setSituacao(Situacao::PENDENTE);
+    } 
+
+    public function relatorio(): string 
+    {
+        return "<div>" 
+            . parent::relatorio() .
+            "<p><b>Nome Fantrasia:</b> {$this->getNomeFantasia()}</p>
+            <p><b>CNPJ:</b> {$this->getCnpj()} </p>
+        </div>";
     }
  
 
