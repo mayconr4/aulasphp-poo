@@ -10,10 +10,10 @@
     <hr>
 
 <?php  // a super classe sempre deve estar por cima das sub classes
-require_once "src/Cliente.php"; // Superclasse
-require_once "src/PessoaJuridica.php"; // subclasse
-require_once "src/Situacao.php"; // Enum
-require_once "src/PessoaFisica.php"; // Subclasse
+require_once "src/Enums/Situacao.php"; // Enum
+require_once "src/Models/Cliente.php"; // Superclasse
+require_once "src/Models/PessoaJuridica.php"; // subclasse 
+require_once "src/Models/PessoaFisica.php"; // Subclasse
 
 $clientePF = new PessoaFisica("Tiago", "tiago@gmail.com", 30, "123.456.789-00");
 $clientePJ = new PessoaJuridica("Jão Pedro","joao@tabajara.com", "123.456.789-00",2019,"Corporação Tabajara"); 
