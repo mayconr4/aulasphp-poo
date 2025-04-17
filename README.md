@@ -7,7 +7,7 @@
 - Ajustes nas chamadas de construtor, usando `parent` para acessar construtor da superclasse 
 - Uso de enumeração para criar um tipo de dados com valores custumizados
 - Alteração de visibilidade para protected em um método da siperclasse, permitindo assim o acesso a patir da subclasse
-- Organização das pastas e arquivos em ´src´
+- Organização das pastas e arquivos em `src`
 
 
 ## 03_encapsulamento-e-metodo-construtor

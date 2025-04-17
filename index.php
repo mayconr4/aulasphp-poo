@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo 04</title>
+    <title>Exemplo 05</title>
 </head>
 <body>
-    <h1>PHP com POO - Exemplo 04</h1>
+    <h1>PHP com POO - Exemplo 05</h1>
     <hr>
 
 <?php  // a super classe sempre deve estar por cima das sub classes
@@ -21,8 +21,13 @@ $clientePJ = new PessoaJuridica("Jão Pedro","joao@tabajara.com", "123.456.789-0
 // $clientePJ->setSituacao(Situacao::ATIVO);
 ?>
 
-<pre><?=var_dump($clientePF,$clientePJ)?></pre>
+<h2>Relátorios</h2>
 
+<h3>PF</h3>
+<?=$clientePF->relatorio()?>
+
+<h3>PJ</h3>
+<?=$clientePJ->relatorio()?>
 
 </body>
 </html>
