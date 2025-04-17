@@ -9,11 +9,13 @@ class Cliente // virou uma super classe
     public function __construct(string $nome, string $email, Situacao $situacao = Situacao::INATIVO) 
     {
         $this->setNome($nome);
-        $this->setEmail($email); 
+        $this->setEmail($email);  
+        $this->setSituacao($situacao); 
                
-    } 
+    }  
 
-    private function setSituacao(Situacao $situacao):void{ 
+    /*Visisbilidade protegida: desta forma, este método pode ser usado aqui em Cliente (Superclasse) e també nas subclasses  o acesso externo (no nosso caso em index) continua sendo bloqueado.**/
+    protected function setSituacao(Situacao $situacao):void{ 
         $this->situacao = $situacao;
     } 
 

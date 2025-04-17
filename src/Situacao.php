@@ -2,6 +2,6 @@
 enum Situacao{  
     case ATIVO;
     case INATIVO;
-    case PENENTE;
+    case PENDENTE;
     case BLOQUEADO;
 }

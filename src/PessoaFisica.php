@@ -12,7 +12,8 @@ class PessoaFisica extends Cliente  // subclasse Pessoa fisica
         parent::__construct($nome, $email); // o :: acessa classes
 
         $this->setIdade($idade);
-        $this->setCpf($cpf);
+        $this->setCpf($cpf); 
+        
     }
 
     private function setCpf(string $cpf): void 
