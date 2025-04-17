@@ -2,12 +2,23 @@
 class Cliente // virou uma super classe
 {
     private string $nome;
-    private string $email;
+    private string $email; 
+    private Situacao $situacao;
 
-    public function __construct(string $nome, string $email)
+    /* Definindo a situação INATIVO como valor padrão para o parâmetro situação no construtor*/
+    public function __construct(string $nome, string $email, Situacao $situacao = Situacao::INATIVO) 
     {
         $this->setNome($nome);
-        $this->setEmail($email);
+        $this->setEmail($email); 
+               
+    } 
+
+    private function setSituacao(Situacao $situacao):void{ 
+        $this->situacao = $situacao;
+    } 
+
+    public function getSituacao(Situacao $situacao):void { 
+        $this->situacao = $situacao;
     }
 
     private function setNome(string $nome): void 
