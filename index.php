@@ -23,7 +23,12 @@ $clientePJ = new PessoaJuridica("Jão Pedro","joao@tabajara.com", "123.456.789-0
 // var_dump($clienteGenerico);
 
 
-// $clientePJ->setSituacao(Situacao::ATIVO);
+// $clientePJ->setSituacao(Situacao::ATIVO); 
+
+/*O código abaixo dará erro, pois não é possivel definir/usar uma subclasse que extenda PessoaJuridica (que é uma classe final) */
+// require_once "src/Models/mei.php";
+// $clienteMei = new Mei("AAA", "a@a.com", "123",2025,"aaaaAAA");
+// var_dump($clienteMei);
 ?>
 
 <h2>Relátorios</h2>
