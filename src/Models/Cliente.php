@@ -1,5 +1,7 @@
 <?php
-class Cliente // virou uma super classe
+/* Classes abstrata: não posde ser instanciada. 
+Com isso, será possivel criar objetos apenas a partir das subclasses.*/
+abstract class Cliente 
 {
     private string $nome;
     private string $email; 

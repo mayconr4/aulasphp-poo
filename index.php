@@ -16,7 +16,12 @@ require_once "src/Models/PessoaJuridica.php"; // subclasse
 require_once "src/Models/PessoaFisica.php"; // Subclasse
 
 $clientePF = new PessoaFisica("Tiago", "tiago@gmail.com", 30, "123.456.789-00");
-$clientePJ = new PessoaJuridica("Jão Pedro","joao@tabajara.com", "123.456.789-00",2019,"Corporação Tabajara"); 
+$clientePJ = new PessoaJuridica("Jão Pedro","joao@tabajara.com", "123.456.789-00",2019,"Corporação Tabajara");  
+
+/* Cliente é uma classe abstrata, portanto,não podemos criar objeto a partitr dela*/
+// $clienteGenerico = new Cliente("Fulano","Fulano@gmail.com");
+// var_dump($clienteGenerico);
+
 
 // $clientePJ->setSituacao(Situacao::ATIVO);
 ?>
