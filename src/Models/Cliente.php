@@ -28,8 +28,8 @@ abstract class Cliente
         $this->situacao = $situacao;
     } 
 
-    public function getSituacao(Situacao $situacao):void { 
-        $this->situacao = $situacao;
+    public function getSituacao():Situacao { 
+       return $this->situacao ;
     }
 
     private function setNome(string $nome): void 

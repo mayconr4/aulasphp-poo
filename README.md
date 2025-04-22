@@ -4,6 +4,7 @@
 
 - Métofos de mesma assinatura (nome,parametros, retorno) mas com comportamentos diferentes
 - [Herança]   indicação de classes abstarata e final
+- [Enumeração] Uso da propriedade `name` para acesso as opções do `Enum`
 
 ## 04_heranca-e-enumeracoes
 

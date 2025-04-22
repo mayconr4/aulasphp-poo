@@ -11,9 +11,10 @@
 
 <?php  // a super classe sempre deve estar por cima das sub classes
 require_once "src/Enums/Situacao.php"; // Enum
-require_once "src/Models/Cliente.php"; // Superclasse
-require_once "src/Models/PessoaJuridica.php"; // subclasse 
+require_once "src/Models/Cliente.php"; // Superclasse 
 require_once "src/Models/PessoaFisica.php"; // Subclasse
+require_once "src/Models/PessoaJuridica.php"; // subclasse 
+
 
 $clientePF = new PessoaFisica("Tiago", "tiago@gmail.com", 30, "123.456.789-00");
 $clientePJ = new PessoaJuridica("Jão Pedro","joao@tabajara.com", "123.456.789-00",2019,"Corporação Tabajara");  
@@ -36,8 +37,12 @@ $clientePJ = new PessoaJuridica("Jão Pedro","joao@tabajara.com", "123.456.789-0
 <h3>PF</h3>
 <?=$clientePF->relatorio()?>
 
+<!-- Acessamos as opções do enum através do getSituacao()->name -->
+<p><b>Situação: </b> <?=$clientePF->getSituacao()->name?> </p>
+
 <h3>PJ</h3>
 <?=$clientePJ->relatorio()?>
+<p><b>Situação: </b> <?=$clientePj->getSituacao()?> </p>
 
 </body>
 </html>
