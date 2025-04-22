@@ -1,5 +1,5 @@
 <?php
-class PessoaFisica extends Cliente  // subclasse Pessoa fisica
+final class PessoaFisica extends Cliente  // subclasse Pessoa fisica
 {
     private int $idade;
     private string $cpf;
