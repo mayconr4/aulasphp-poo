@@ -1,5 +1,8 @@
 <?php 
-/*Classe final: não permite herança, ou seja , não será possivel criar uma subclasse que extenda PessoaJuridica */
+
+namespace MeuProjeto\Models;
+
+use MeuProjeto\Enums\Situacao;
 class PessoaJuridica extends Cliente 
 { 
     private string $cnpj;
@@ -15,7 +18,7 @@ class PessoaJuridica extends Cliente
         $this->setNomeFantasia($nomeFantasia);  
 
         /*Como o método foi definido na superclasse como protected agora é possivel usá-lo para mudar a situação de PJ. */ 
-        $this->setSituacao(Situacao::PENDENTE);
+        $this->setSituacao(Situacao::INATIVO);
     } 
 
     public function relatorio(): string 

@@ -1,4 +1,6 @@
-<?php 
+<?php  
+namespace MeuProjeto\Enums;
+
 enum Situacao{  
     case ATIVO;
     case INATIVO;

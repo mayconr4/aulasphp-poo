@@ -1,4 +1,7 @@
-<?php
+<?php 
+
+namespace MeuProjeto\Models;
+use InvalidArgumentException;
 final class PessoaFisica extends Cliente  // subclasse Pessoa fisica
 {
     private int $idade;
