@@ -16,17 +16,19 @@ use MeuProjeto\Models\PessoaFisica;
 use MeuProjeto\Models\PessoaJuridica;
 
 
-// a super classe sempre deve estar por cima das sub classes
-require_once "src/Enums/Situacao.php"; // Enum
-require_once "src/Models/Cliente.php"; // Superclasse 
-require_once "src/Models/PessoaFisica.php"; // Subclasse
-require_once "src/Models/PessoaJuridica.php"; // subclasse 
+require_once "vendor/autoload.php";
 
 
 $clientePF = new PessoaFisica("Tiago", "tiago@gmail.com", 30, "123.456.789-00");
 $clientePJ = new PessoaJuridica("Jão Pedro","joao@tabajara.com", "123.456.789-00",2019,"Corporação Tabajara");  
 
-
+/*Subistituimos os requires anteriores,
+por um UNICO REQUIRE apontando para o autoload */
+use MeuProjeto\Calculadora;
+   
+/*Acessando um método estático (ou sejá, sem passar por um objeto) */
+$total = Calculadora::somar(10,5);
+echo $total;
 ?>
 
 <h2>Relátorios</h2>

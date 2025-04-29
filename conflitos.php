@@ -13,8 +13,7 @@
 use Fornecedores\Pagamento;
 use Prestadores\Pagamento as PrestadoresPagamento; // Neste caso, com apelido
 
-require_once "src/Fornecedores/Pagamento.php";
-require_once "src/Prestadores/Pagamento.php";
+require_once "vendor/autoload.php";
 
 // Criando objeto para usar as classes de pagamento
 $pagamentoFornecedor = new Pagamento();
