@@ -6,7 +6,7 @@
     <title>Exemplo 05</title>
 </head>
 <body>
-    <h1>PHP com POO - Exemplo 06</h1>
+    <h1>PHP com POO - Exemplo 07</h1>
     <hr>
 
 <?php
